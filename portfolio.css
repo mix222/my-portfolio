@@ -1,0 +1,280 @@
+/* Reset Baseline */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif, system-ui;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* ================= HERO SECTION ================= */
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90vh;
+    padding: 60px 0;
+}
+
+.hero-left-container {
+    width: 50%;
+}
+
+.hero-left-container p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.hero-left-container h1 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #ffffff;
+}
+
+.hero-left-container h1 span {
+    color: #f39c12;
+    /* ສີເຫຼືອງ/ທອງ ຕາມດີໄຊ */
+}
+
+.hero-right-container {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-right-container img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+/* ================= ABOUT SECTION ================= */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+    gap: 50px;
+}
+
+.about-left-container {
+    width: 45%;
+}
+
+.about-left-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.about-right-container {
+    width: 50%;
+}
+
+.about-right-container>div:first-child h3 {
+    color: #f39c12;
+    font-size: 18px;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+
+/* ເສັ້ນກ້ອງຫົວຂໍ້ ABOUT ME */
+
+.about-right-container>div:first-child h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: #f39c12;
+}
+
+.about-right-container p:first-of-type {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.about-right-container h3:nth-of-type(2) {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.about-right-container p:last-of-type {
+    color: #a0a0a0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+
+/* ປຸ່ມ CV */
+
+.about-right-container button {
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 15px;
+}
+
+.about-right-container button:first-child {
+    background-color: #f39c12;
+    color: #1a1a1a;
+    border: 2px solid #f39c12;
+}
+
+.about-right-container button:first-child:hover {
+    background-color: transparent;
+    color: #f39c12;
+}
+
+.about-right-container button:last-child {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.about-right-container button:last-child:hover {
+    border-color: #f39c12;
+    color: #f39c12;
+}
+
+
+/* ================= SERVICE SECTION ================= */
+
+.service-container {
+    padding: 80px 0 120px 0;
+    text-align: center;
+}
+
+.service-left-container h1 {
+    font-size: 24px;
+    color: #f39c12;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.service-left-container h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background-color: #f39c12;
+}
+
+.service-right-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.service-right-container>div {
+    background: #242424;
+    padding: 40px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-right-container>div:hover {
+    transform: translateY(-8px);
+    background: #2a2a2a;
+}
+
+
+/* Icon ວົງມົນ */
+
+.service-right-container i {
+    font-size: 22px;
+    color: #f39c12;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #f39c12;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.service-right-container h4 {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.service-right-container p {
+    font-size: 13px;
+    color: #999999;
+    line-height: 1.6;
+}
+
+
+/* Responsive Support */
+
+@media (max-width: 992px) {
+    .service-right-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-container,
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-left-container,
+    .hero-right-container,
+    .about-left-container,
+    .about-right-container {
+        width: 100%;
+    }
+    .service-right-container {
+        grid-template-columns: 1fr;
+    }
+}
